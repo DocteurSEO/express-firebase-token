@@ -3,7 +3,9 @@ async function isUser(req, res, next) {
   const token = req.headers.authorization
 
   if(token){
-      // token firebase
+
+    
+  
      const isAuth = await getToken(token)
 
       if(!isAuth){
